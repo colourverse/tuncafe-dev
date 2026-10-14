@@ -156,8 +156,7 @@ function App() {
       <header className="sticky top-0 z-30 border-b border-[#14352d]/10 bg-[#f8faf6]/95 backdrop-blur-lg">
         <div className="mx-auto flex h-[76px] max-w-[1380px] items-center justify-between px-5 lg:px-10">
           <button onClick={() => scrollTo("home")} className="flex items-center gap-3" aria-label="Tuncafe home">
-            <img src="/tuncafe-logo.png" alt="Tuncafe" className="h-14 w-14 rounded-full object-cover" />
-            <span className="font-display text-[23px] font-bold tracking-[-0.03em]">TUNCAFE</span>
+            <img src="/tuncafe-logo.png" alt="Tuncafe" className="h-[120px] w-[120px] rounded-full object-cover" />
           </button>
           <nav className="hidden items-center gap-8 text-[14px] font-semibold md:flex">
             <button onClick={() => scrollTo("menu")} className="nav-link">Menu</button>
