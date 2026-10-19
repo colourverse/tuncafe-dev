@@ -181,7 +181,7 @@ function App() {
                 <span className="h-2 w-2 rounded-full bg-[#75a83c]" /> Family-made in Pattaya
               </div>
               <h1 className="font-display text-[56px] font-semibold leading-[0.98] tracking-[-0.055em] text-[#123c35] sm:text-[74px] lg:text-[86px]">
-                A little taste of <span className="italic text-[#237eac]">Thailand.</span>
+                A little taste of <span className="italic text-[#2f7d32]">Thailand.</span>
               </h1>
               <p className="mt-7 max-w-lg text-lg leading-8 text-[#46645c]">
                 Cool down with handcrafted Thai drinks, small-batch gelato and homemade cakes—served with a warm family welcome.
@@ -246,14 +246,14 @@ function App() {
                 <div className="relative aspect-[4/4.3] overflow-hidden rounded-[22px] bg-[#e5ebe1]">
                   <img src={product.image} alt={product.name} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.035]" />
                   {product.tag && <span className="absolute left-3 top-3 rounded-full bg-white/92 px-3 py-1.5 text-[11px] font-bold text-[#184b3b] shadow-sm">{product.tag}</span>}
-                  <button onClick={() => changeQuantity(product.id, 1)} className="absolute bottom-3 right-3 grid h-11 w-11 place-items-center rounded-full bg-[#123c35] text-white shadow-lg transition hover:scale-105 hover:bg-[#237eac]" aria-label={`Add ${product.name}`}>
+                  <button onClick={() => changeQuantity(product.id, 1)} className="absolute bottom-3 right-3 grid h-11 w-11 place-items-center rounded-full bg-[#123c35] text-white shadow-lg transition hover:scale-105 hover:bg-[#2f7d32]" aria-label={`Add ${product.name}`}>
                     <Icon name="plus" size={21} />
                   </button>
                 </div>
                 <div className="pt-4">
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="font-display text-[21px] font-semibold leading-6 tracking-[-0.02em]">{product.name}</h3>
-                    <span className="shrink-0 font-bold text-[#237eac]">฿{product.price}</span>
+                    <span className="shrink-0 font-bold text-[#2f7d32]">฿{product.price}</span>
                   </div>
                   <p className="mt-1 text-xs font-semibold text-[#3f8466]">{product.thai}</p>
                   <p className="mt-2 text-sm leading-6 text-[#687b76]">{product.description}</p>
@@ -271,7 +271,7 @@ function App() {
               <p className="mt-5 max-w-lg leading-7 text-[#4c665e]">Enter the number on your table sign, choose your favourites and pay. We’ll take care of the rest.</p>
               <form className="mt-8 flex max-w-md gap-3" onSubmit={(event) => { event.preventDefault(); if (table) setConfirmedTable(table); }}>
                 <label className="sr-only" htmlFor="table">Table number</label>
-                <input id="table" type="number" min="1" max="99" value={table} onChange={(event) => setTable(event.target.value)} placeholder="Table number" className="min-w-0 flex-1 rounded-xl border border-[#123c35]/15 bg-white px-5 py-4 font-semibold outline-none focus:border-[#237eac] focus:ring-2 focus:ring-[#237eac]/15" />
+                <input id="table" type="number" min="1" max="99" value={table} onChange={(event) => setTable(event.target.value)} placeholder="Table number" className="min-w-0 flex-1 rounded-xl border border-[#123c35]/15 bg-white px-5 py-4 font-semibold outline-none focus:border-[#2f7d32] focus:ring-2 focus:ring-[#2f7d32]/15" />
                 <button type="submit" className="primary-button px-6">Set table</button>
               </form>
               {confirmedTable && <div className="mt-4 flex items-center gap-2 text-sm font-bold text-[#247653]"><span className="grid h-5 w-5 place-items-center rounded-full bg-[#247653] text-white"><Icon name="check" size={13} /></span> Table {confirmedTable} saved to your order</div>}
@@ -297,9 +297,9 @@ function App() {
               <p className="mt-6 text-lg leading-8 text-[#536b64]">Tuncafe began with one simple idea: share the flavours our family loves with people from all over the world.</p>
               <p className="mt-4 leading-7 text-[#687b76]">We brew our Thai tea every morning, source tropical fruit locally and make our desserts in small batches. Whether Pattaya is home or a stop on your travels, we hope you feel like family here.</p>
               <div className="mt-8 flex gap-8 border-t border-[#14352d]/10 pt-7">
-                <div><div className="font-display text-3xl font-semibold text-[#237eac]">Local</div><div className="mt-1 text-sm text-[#687b76]">Thai ingredients</div></div>
-                <div><div className="font-display text-3xl font-semibold text-[#237eac]">Family</div><div className="mt-1 text-sm text-[#687b76]">Owned & operated</div></div>
-                <div><div className="font-display text-3xl font-semibold text-[#237eac]">Fresh</div><div className="mt-1 text-sm text-[#687b76]">Made each day</div></div>
+                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Local</div><div className="mt-1 text-sm text-[#687b76]">Thai ingredients</div></div>
+                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Family</div><div className="mt-1 text-sm text-[#687b76]">Owned & operated</div></div>
+                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Fresh</div><div className="mt-1 text-sm text-[#687b76]">Made each day</div></div>
               </div>
             </div>
           </div>
@@ -312,7 +312,7 @@ function App() {
           </div>
           <div className="grid overflow-hidden rounded-[30px] border border-[#14352d]/10 bg-white shadow-[0_20px_70px_rgba(20,53,45,.08)] md:grid-cols-[1.15fr_.85fr]">
             <div className="map-pattern relative min-h-[380px] overflow-hidden bg-[#dce9e4] p-8">
-              <div className="absolute left-[45%] top-[43%] grid h-16 w-16 place-items-center rounded-full bg-[#237eac] text-white shadow-xl"><Icon name="pin" size={29} /></div>
+              <div className="absolute left-[45%] top-[43%] grid h-16 w-16 place-items-center rounded-full bg-[#2f7d32] text-white shadow-xl"><Icon name="pin" size={29} /></div>
               <div className="absolute bottom-6 left-6 rounded-xl bg-white px-4 py-3 text-xs font-bold shadow-md">Central Pattaya</div>
             </div>
             <div className="p-8 sm:p-12">
@@ -356,7 +356,7 @@ function App() {
                   {cartItems.map((item) => (
                     <div key={item.id} className="flex gap-4">
                       <img src={item.image} alt="" className="h-20 w-20 rounded-xl object-cover" />
-                      <div className="min-w-0 flex-1"><div className="font-display font-semibold">{item.name}</div><div className="mt-1 text-sm font-bold text-[#237eac]">฿{item.price}</div><div className="mt-2 flex w-fit items-center rounded-full border border-[#14352d]/15"><button onClick={() => changeQuantity(item.id, -1)} className="p-1.5"><Icon name="minus" size={15} /></button><span className="w-7 text-center text-xs font-bold">{item.quantity}</span><button onClick={() => changeQuantity(item.id, 1)} className="p-1.5"><Icon name="plus" size={15} /></button></div></div>
+                      <div className="min-w-0 flex-1"><div className="font-display font-semibold">{item.name}</div><div className="mt-1 text-sm font-bold text-[#2f7d32]">฿{item.price}</div><div className="mt-2 flex w-fit items-center rounded-full border border-[#14352d]/15"><button onClick={() => changeQuantity(item.id, -1)} className="p-1.5"><Icon name="minus" size={15} /></button><span className="w-7 text-center text-xs font-bold">{item.quantity}</span><button onClick={() => changeQuantity(item.id, 1)} className="p-1.5"><Icon name="plus" size={15} /></button></div></div>
                       <div className="text-sm font-bold">฿{item.price * item.quantity}</div>
                     </div>
                   ))}
