@@ -156,7 +156,7 @@ function App() {
       <header className="sticky top-0 z-30 border-b border-[#14352d]/10 bg-[#f8faf6]/95 backdrop-blur-lg">
         <div className="mx-auto flex h-[100px] max-w-[1380px] items-center justify-between px-5 lg:px-10">
           <button onClick={() => scrollTo("home")} className="flex items-center gap-3" aria-label="Tuncafe home">
-            <img src="/tuncafe-logo.png" alt="Tuncafe" className="h-[145px] w-[145px] translate-y-[22.5px] rounded-full object-cover" />
+            <img src="/tuncafe-logo.png" alt="Tuncafe" className="h-[91px] w-[170px] object-contain" />
           </button>
           <nav className="hidden items-center gap-8 text-[14px] font-semibold md:flex">
             <button onClick={() => scrollTo("menu")} className="nav-link">Menu</button>
@@ -334,7 +334,7 @@ function App() {
 
       <footer className="bg-[#0c2d27] px-5 py-12 text-white lg:px-10">
         <div className="mx-auto flex max-w-[1380px] flex-col justify-between gap-8 sm:flex-row sm:items-center">
-          <div className="flex items-center gap-4"><img src="/tuncafe-logo.png" alt="" className="h-14 w-14 rounded-full object-cover" /><div><div className="font-display text-xl font-semibold">TUNCAFE</div><div className="text-xs text-white/50">Fresh flavours. Family welcome.</div></div></div>
+          <div className="flex items-center gap-4"><img src="/tuncafe-logo.png" alt="" className="h-14 w-[105px] object-contain" /><div><div className="font-display text-xl font-semibold">TUNCAFE</div><div className="text-xs text-white/50">Fresh flavours. Family welcome.</div></div></div>
           <div className="text-sm text-white/50">© 2026 Tuncafe Pattaya · Made with care in Thailand</div>
         </div>
       </footer>
