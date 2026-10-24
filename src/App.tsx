@@ -283,14 +283,7 @@ function App() {
         </section>
 
         <section id="story" className="bg-[#fffdf8] py-20 lg:py-28">
-          <div className="mx-auto grid max-w-[1380px] items-center gap-12 px-5 md:grid-cols-2 lg:gap-24 lg:px-10">
-            <div className="relative">
-              <img src="https://images.unsplash.com/photo-1624639643234-2c8ed366e76f?auto=format&fit=crop&w=1100&q=85" alt="The family behind Tuncafe" className="aspect-[4/3.5] w-full rounded-[28px] object-cover" />
-              <div className="absolute -bottom-5 right-5 rounded-2xl bg-white px-5 py-4 shadow-xl">
-                <div className="text-xs font-bold uppercase tracking-[.15em] text-[#3f8466]">From our family</div>
-                <div className="mt-1 font-display text-lg font-semibold">With love, every day</div>
-              </div>
-            </div>
+          <div className="mx-auto max-w-3xl px-5 lg:px-10">
             <div>
               <div className="eyebrow">Our family story</div>
               <h2 className="section-title mt-4">Pattaya roots.<br />A warm welcome.</h2>
