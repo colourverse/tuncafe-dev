@@ -282,17 +282,17 @@ function App() {
           </div>
         </section>
 
-        <section id="story" className="bg-[#eaf2e5] py-20 text-[#14352d] lg:py-28">
+        <section id="story" className="bg-[#fffdf8] py-20 lg:py-28">
           <div className="mx-auto max-w-3xl px-5 lg:px-10">
             <div>
               <div className="eyebrow">Our family story</div>
               <h2 className="section-title mt-4">Pattaya roots.<br />A warm welcome.</h2>
-              <p className="mt-6 text-lg leading-8 text-[#29473f]">Tuncafe began with one simple idea: share the flavours our family loves with people from all over the world.</p>
-              <p className="mt-4 leading-7 text-[#29473f]">We brew our Thai tea every morning, source tropical fruit locally and make our desserts in small batches. Whether Pattaya is home or a stop on your travels, we hope you feel like family here.</p>
+              <p className="mt-6 text-lg leading-8 text-[#536b64]">Tuncafe began with one simple idea: share the flavours our family loves with people from all over the world.</p>
+              <p className="mt-4 leading-7 text-[#687b76]">We brew our Thai tea every morning, source tropical fruit locally and make our desserts in small batches. Whether Pattaya is home or a stop on your travels, we hope you feel like family here.</p>
               <div className="mt-8 flex gap-8 border-t border-[#14352d]/10 pt-7">
-                <div><div className="font-display text-3xl font-semibold text-[#14352d]">Local</div><div className="mt-1 text-sm text-[#29473f]">Thai ingredients</div></div>
-                <div><div className="font-display text-3xl font-semibold text-[#14352d]">Family</div><div className="mt-1 text-sm text-[#29473f]">Owned & operated</div></div>
-                <div><div className="font-display text-3xl font-semibold text-[#14352d]">Fresh</div><div className="mt-1 text-sm text-[#29473f]">Made each day</div></div>
+                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Local</div><div className="mt-1 text-sm text-[#687b76]">Thai ingredients</div></div>
+                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Family</div><div className="mt-1 text-sm text-[#687b76]">Owned & operated</div></div>
+                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Fresh</div><div className="mt-1 text-sm text-[#687b76]">Made each day</div></div>
               </div>
             </div>
           </div>
