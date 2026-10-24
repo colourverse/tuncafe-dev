@@ -277,7 +277,10 @@ function App() {
               {confirmedTable && <div className="mt-4 flex items-center gap-2 text-sm font-bold text-[#247653]"><span className="grid h-5 w-5 place-items-center rounded-full bg-[#247653] text-white"><Icon name="check" size={13} /></span> Table {confirmedTable} saved to your order</div>}
             </div>
             <div className="relative min-h-[320px]">
-              <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=1100&q=85" alt="Colourful small-batch gelato" className="absolute inset-0 h-full w-full object-cover" />
+              <img src="https://images.unsplash.com/photo-1689037676470-b72230d5236e?auto=format&fit=crop&w=1100&q=85" alt="Warm and welcoming Tuncafe interior" className="absolute inset-0 h-full w-full object-cover" />
+              <div className="absolute bottom-5 right-5 rounded-2xl bg-white/90 px-5 py-3 shadow-lg backdrop-blur-sm">
+                <img src="/tuncafe-logo.png" alt="Tuncafe" className="h-16 w-32 object-contain" />
+              </div>
             </div>
           </div>
         </section>
