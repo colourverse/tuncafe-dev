@@ -154,7 +154,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[#f8faf6] text-[#14352d]">
       <header className="sticky top-0 z-30 border-b border-[#14352d]/10 bg-[#f8faf6]/95 backdrop-blur-lg">
-        <div className="mx-auto flex h-[100px] max-w-[1380px] items-center justify-between px-5 lg:px-10">
+        <div className="mx-auto flex h-[120px] max-w-[1380px] items-center justify-between px-5 lg:px-10">
           <button onClick={() => scrollTo("home")} className="flex items-center gap-3" aria-label="Tuncafe home">
             <img src="/tuncafe-logo.png" alt="Tuncafe" className="h-[100px] w-[187px] object-contain" />
           </button>
@@ -263,7 +263,7 @@ function App() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1380px] px-5 pb-20 lg:px-10 lg:pb-28">
+        <section className="mx-auto max-w-[1380px] px-5 pb-[50px] lg:px-10">
           <div className="table-panel grid overflow-hidden rounded-[30px] bg-[#dcebd3] md:grid-cols-[1.05fr_.95fr]">
             <div className="p-8 sm:p-12 lg:p-16">
               <div className="eyebrow">Dining with us?</div>
@@ -289,7 +289,7 @@ function App() {
               <h2 className="section-title mt-4">Pattaya roots.<br />A warm welcome.</h2>
               <p className="mt-6 text-lg leading-8 text-[#536b64]">Tuncafe began with one simple idea: share the flavours our family loves with people from all over the world.</p>
               <p className="mt-4 leading-7 text-[#687b76]">We brew our Thai tea every morning, source tropical fruit locally and make our desserts in small batches. Whether Pattaya is home or a stop on your travels, we hope you feel like family here.</p>
-              <div className="mt-8 flex gap-8 border-t border-[#14352d]/10 pt-7">
+              <div className="mt-8 flex gap-8 border-t border-[#14352d]/10 pt-5">
                 <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Local</div><div className="mt-1 text-sm text-[#687b76]">Thai ingredients</div></div>
                 <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Family</div><div className="mt-1 text-sm text-[#687b76]">Owned & operated</div></div>
                 <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Fresh</div><div className="mt-1 text-sm text-[#687b76]">Made each day</div></div>
@@ -298,7 +298,7 @@ function App() {
           </div>
         </section>
 
-        <section id="visit" className="mx-auto max-w-[1380px] px-5 py-20 lg:px-10 lg:py-28">
+        <section id="visit" className="mx-auto max-w-[1380px] px-5 pb-[70px] pt-[50px] lg:px-10">
           <div className="mb-12 text-center">
             <div className="eyebrow">Come say hello</div>
             <h2 className="section-title mt-4">Find us in sunny Pattaya</h2>
