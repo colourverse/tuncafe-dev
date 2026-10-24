@@ -282,7 +282,7 @@ function App() {
           </div>
         </section>
 
-        <section id="story" className="bg-[#fffdf8] py-20 lg:py-28">
+        <section id="story" className="bg-[#fffdf8] py-10 lg:py-14">
           <div className="mx-auto max-w-3xl px-5 lg:px-10">
             <div>
               <div className="eyebrow">Our family story</div>
