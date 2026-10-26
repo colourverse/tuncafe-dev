@@ -128,8 +128,6 @@ function App() {
   const [category, setCategory] = useState("All");
   const [cart, setCart] = useState<Record<number, number>>({});
   const [cartOpen, setCartOpen] = useState(false);
-  const [table, setTable] = useState("");
-  const [confirmedTable, setConfirmedTable] = useState("");
   const [paid, setPaid] = useState(false);
 
   const visible = category === "All" ? products : products.filter((item) => item.category === category);
@@ -263,20 +261,20 @@ function App() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-[1380px] px-5 pb-[50px] lg:px-10">
+        <section id="story" className="mx-auto max-w-[1380px] px-10 pb-[50px] pt-0">
           <div className="table-panel grid overflow-hidden rounded-[30px] bg-[#dcebd3] md:grid-cols-[1.05fr_.95fr]">
             <div className="p-8 sm:p-12 lg:p-16">
-              <div className="eyebrow">Dining with us?</div>
-              <h2 className="mt-4 font-display text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">We’ll bring it to your table.</h2>
-              <p className="mt-5 max-w-lg leading-7 text-[#4c665e]">Enter the number on your table sign, choose your favourites and pay. We’ll take care of the rest.</p>
-              <form className="mt-8 flex max-w-md gap-3" onSubmit={(event) => { event.preventDefault(); if (table) setConfirmedTable(table); }}>
-                <label className="sr-only" htmlFor="table">Table number</label>
-                <input id="table" type="number" min="1" max="99" value={table} onChange={(event) => setTable(event.target.value)} placeholder="Table number" className="min-w-0 flex-1 rounded-xl border border-[#123c35]/15 bg-white px-5 py-4 font-semibold outline-none focus:border-[#2f7d32] focus:ring-2 focus:ring-[#2f7d32]/15" />
-                <button type="submit" className="primary-button px-6">Set table</button>
-              </form>
-              {confirmedTable && <div className="mt-4 flex items-center gap-2 text-sm font-bold text-[#247653]"><span className="grid h-5 w-5 place-items-center rounded-full bg-[#247653] text-white"><Icon name="check" size={13} /></span> Table {confirmedTable} saved to your order</div>}
+              <div className="eyebrow">Our family story</div>
+              <h2 className="section-title mt-4">Pattaya roots.<br />A warm welcome.</h2>
+              <p className="mt-6 text-lg leading-8 text-[#536b64]">Tuncafe began with one simple idea: share the flavours our family loves with people from all over the world.</p>
+              <p className="mt-4 leading-7 text-[#687b76]">We brew our Thai tea every morning, source tropical fruit locally and make our desserts in small batches. Whether Pattaya is home or a stop on your travels, we hope you feel like family here.</p>
+              <div className="mt-8 flex flex-wrap gap-x-8 gap-y-5 border-t border-[#14352d]/10 px-0 pb-0 pt-5">
+                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Local</div><div className="mt-1 text-sm text-[#687b76]">Thai ingredients</div></div>
+                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Family</div><div className="mt-1 text-sm text-[#687b76]">Owned & operated</div></div>
+                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Fresh</div><div className="mt-1 text-sm text-[#687b76]">Made each day</div></div>
+              </div>
             </div>
-            <div className="relative min-h-[320px]">
+            <div className="relative min-h-[380px] md:min-h-[520px]">
               <img src="https://images.unsplash.com/photo-1689037676470-b72230d5236e?auto=format&fit=crop&w=1100&q=85" alt="Warm and welcoming Tuncafe interior" className="absolute inset-0 h-full w-full object-cover" />
               <div className="absolute bottom-5 right-5 rounded-2xl bg-white/90 px-5 py-3 shadow-lg backdrop-blur-sm">
                 <img src="/tuncafe-logo.png" alt="Tuncafe" className="h-16 w-32 object-contain" />
@@ -285,23 +283,7 @@ function App() {
           </div>
         </section>
 
-        <section id="story" className="bg-[#fffdf8] py-10 lg:py-14">
-          <div className="mx-auto max-w-3xl px-5 lg:px-10">
-            <div>
-              <div className="eyebrow">Our family story</div>
-              <h2 className="section-title mt-4">Pattaya roots.<br />A warm welcome.</h2>
-              <p className="mt-6 text-lg leading-8 text-[#536b64]">Tuncafe began with one simple idea: share the flavours our family loves with people from all over the world.</p>
-              <p className="mt-4 leading-7 text-[#687b76]">We brew our Thai tea every morning, source tropical fruit locally and make our desserts in small batches. Whether Pattaya is home or a stop on your travels, we hope you feel like family here.</p>
-              <div className="mt-8 flex gap-8 border-t border-[#14352d]/10 pt-5">
-                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Local</div><div className="mt-1 text-sm text-[#687b76]">Thai ingredients</div></div>
-                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Family</div><div className="mt-1 text-sm text-[#687b76]">Owned & operated</div></div>
-                <div><div className="font-display text-3xl font-semibold text-[#2f7d32]">Fresh</div><div className="mt-1 text-sm text-[#687b76]">Made each day</div></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="visit" className="mx-auto max-w-[1380px] px-5 pb-[70px] pt-[50px] lg:px-10">
+        <section id="visit" className="mx-auto max-w-[1380px] px-10 pb-[70px] pt-[50px]">
           <div className="mb-12 text-center">
             <div className="eyebrow">Come say hello</div>
             <h2 className="section-title mt-4">Find us in sunny Pattaya</h2>
@@ -339,13 +321,13 @@ function App() {
         <div className="fixed inset-0 z-50 bg-[#081d18]/45 backdrop-blur-[2px]" onMouseDown={() => setCartOpen(false)}>
           <aside className="absolute right-0 top-0 flex h-full w-full max-w-[460px] flex-col bg-[#fbfcf8] shadow-2xl" onMouseDown={(event) => event.stopPropagation()}>
             <div className="flex items-center justify-between border-b border-[#14352d]/10 px-6 py-5">
-              <div><div className="font-display text-2xl font-semibold">Your order</div>{confirmedTable && <div className="mt-1 text-xs font-bold text-[#3f8466]">Table {confirmedTable}</div>}</div>
+              <div className="font-display text-2xl font-semibold">Your order</div>
               <button onClick={() => setCartOpen(false)} className="grid h-10 w-10 place-items-center rounded-full bg-[#edf1ea]" aria-label="Close order"><Icon name="close" /></button>
             </div>
             <div className="flex-1 overflow-y-auto p-6">
               {paid ? (
                 <div className="grid h-full place-items-center text-center">
-                  <div><div className="mx-auto grid h-20 w-20 place-items-center rounded-full bg-[#dcebd3] text-[#247653]"><Icon name="check" size={38} /></div><h3 className="mt-6 font-display text-3xl font-semibold">Order received</h3><p className="mt-3 leading-7 text-[#687b76]">Thank you. We’re preparing your order{confirmedTable ? ` for table ${confirmedTable}` : ""} now.</p></div>
+                  <div><div className="mx-auto grid h-20 w-20 place-items-center rounded-full bg-[#dcebd3] text-[#247653]"><Icon name="check" size={38} /></div><h3 className="mt-6 font-display text-3xl font-semibold">Order received</h3><p className="mt-3 leading-7 text-[#687b76]">Thank you. We’re preparing your order now.</p></div>
                 </div>
               ) : cartItems.length ? (
                 <div className="space-y-5">
@@ -363,7 +345,6 @@ function App() {
             </div>
             {!paid && cartItems.length > 0 && (
               <div className="border-t border-[#14352d]/10 p-6">
-                {!confirmedTable && <button onClick={() => { setCartOpen(false); document.getElementById("table")?.focus(); document.getElementById("table")?.scrollIntoView({ behavior: "smooth", block: "center" }); }} className="mb-4 w-full rounded-xl bg-[#edf3e9] px-4 py-3 text-sm font-bold text-[#247653]">Add your table number</button>}
                 <div className="flex justify-between text-sm"><span className="text-[#687b76]">Subtotal</span><strong>฿{subtotal}</strong></div>
                 <div className="mt-2 flex justify-between text-sm"><span className="text-[#687b76]">Service</span><strong>฿0</strong></div>
                 <div className="mt-4 flex justify-between border-t border-[#14352d]/10 pt-4 font-display text-xl font-semibold"><span>Total</span><span>฿{subtotal}</span></div>
