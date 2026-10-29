@@ -170,7 +170,7 @@ function App() {
       </header>
 
       <main>
-        <section id="home" className="relative overflow-hidden bg-[#eaf2e5]">
+        <section id="home" className="relative scroll-mt-[120px] overflow-hidden bg-[#eaf2e5]">
           <div className="absolute -left-24 -top-20 h-80 w-80 rounded-full border border-[#2e7053]/15" />
           <div className="absolute -left-2 top-10 h-80 w-80 rounded-full border border-[#2e7053]/10" />
           <div className="mx-auto grid min-h-[660px] max-w-[1380px] items-center gap-10 px-5 py-16 lg:grid-cols-[.9fr_1.1fr] lg:px-10 lg:py-14">
@@ -223,7 +223,7 @@ function App() {
           </div>
         </section>
 
-        <section id="menu" className="mx-auto max-w-[1380px] px-5 py-20 lg:px-10 lg:py-28">
+        <section id="menu" className="mx-auto max-w-[1380px] scroll-mt-[120px] px-5 py-20 lg:px-10 lg:py-28">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
               <div className="eyebrow">Made fresh for you</div>
@@ -261,7 +261,7 @@ function App() {
           </div>
         </section>
 
-        <section id="story" className="mx-auto max-w-[1380px] px-10 pb-[50px] pt-0">
+        <section id="story" className="mx-auto max-w-[1380px] scroll-mt-[120px] px-10 pb-[50px] pt-0">
           <div className="table-panel grid overflow-hidden rounded-[30px] bg-[#dcebd3] md:grid-cols-[1.05fr_.95fr]">
             <div className="p-8 sm:p-12 lg:p-16">
               <div className="eyebrow">Our family story</div>
@@ -283,7 +283,7 @@ function App() {
           </div>
         </section>
 
-        <section id="visit" className="mx-auto max-w-[1380px] px-10 pb-[70px] pt-[50px]">
+        <section id="visit" className="mx-auto max-w-[1380px] scroll-mt-[120px] px-10 pb-[70px] pt-[50px]">
           <div className="mb-12 text-center">
             <div className="eyebrow">Come say hello</div>
             <h2 className="section-title mt-4">Find us in sunny Pattaya</h2>
