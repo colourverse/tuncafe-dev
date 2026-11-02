@@ -541,7 +541,7 @@ function App() {
       </main>
 
       <footer className="bg-[#eaf2e5] px-5 py-12 text-[#14352d] lg:px-10">
-        <div className="mx-auto flex max-w-[1380px] flex-col justify-between gap-8 sm:flex-row sm:items-center">
+        <div className="mx-auto grid max-w-[1380px] gap-8 sm:grid-cols-[1fr_auto_1fr] sm:items-center">
           <div className="flex items-center gap-4">
             <img
               src="/tuncafe-logo.png"
@@ -552,7 +552,57 @@ function App() {
               Fresh flavours. Family welcome.
             </div>
           </div>
-          <div className="text-sm text-[#29473f]">
+          <div className="flex items-center justify-center gap-2">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Tuncafe on Facebook"
+              className="grid h-9 w-9 place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
+            >
+              <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current" aria-hidden="true">
+                <path d="M13.5 21v-8h2.75l.41-3H13.5V8.08c0-.87.24-1.46 1.58-1.46h1.69V3.94c-.29-.04-1.29-.13-2.46-.13-2.43 0-4.1 1.48-4.1 4.21V10H7.46v3h2.75v8h3.29Z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Tuncafe on Instagram"
+              className="grid h-9 w-9 place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
+            >
+              <svg viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="1.8" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r=".75" className="fill-current stroke-none" />
+              </svg>
+            </a>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Tuncafe on YouTube"
+              className="grid h-9 w-9 place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
+            >
+              <svg viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true">
+                <path d="M21 12c0-2.15-.25-3.65-.55-4.45a2.35 2.35 0 0 0-1.35-1.35C18.25 5.9 16.1 5.7 12 5.7s-6.25.2-7.1.5a2.35 2.35 0 0 0-1.35 1.35C3.25 8.35 3 9.85 3 12s.25 3.65.55 4.45A2.35 2.35 0 0 0 4.9 17.8c.85.3 3 .5 7.1.5s6.25-.2 7.1-.5a2.35 2.35 0 0 0 1.35-1.35c.3-.8.55-2.3.55-4.45Z" />
+                <path d="m10 9 5 3-5 3V9Z" />
+              </svg>
+            </a>
+            <a
+              href="https://www.tiktok.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Tuncafe on TikTok"
+              className="grid h-9 w-9 place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
+            >
+              <svg viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M14 4v10.5a4.5 4.5 0 1 1-3.5-4.38" />
+                <path d="M14 4c.45 2.45 1.8 3.8 4 4" />
+              </svg>
+            </a>
+          </div>
+          <div className="text-center text-sm text-[#29473f] sm:justify-self-end sm:text-right">
             © 2026 Tuncafe.com Built by Annop Tunchulrinorn
           </div>
         </div>
