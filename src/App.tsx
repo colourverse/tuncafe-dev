@@ -313,7 +313,7 @@ function App() {
       <footer className="bg-[#eaf2e5] px-5 py-12 text-[#14352d] lg:px-10">
         <div className="mx-auto flex max-w-[1380px] flex-col justify-between gap-8 sm:flex-row sm:items-center">
           <div className="flex items-center gap-4"><img src="/tuncafe-logo.png" alt="" className="h-[61.6px] w-[115.5px] object-contain" /><div className="text-xs text-[#29473f]">Fresh flavours. Family welcome.</div></div>
-          <div className="text-sm text-[#29473f]">© 2026 Tuncafe.com. <brBuilt by Annop Tunchulrinorn.</div>
+          <div className="text-sm text-[#29473f]">© 2026 Tuncafe.com. <br/>Built by Annop Tunchulrinorn.</div>
         </div>
       </footer>
 
