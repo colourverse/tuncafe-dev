@@ -552,15 +552,15 @@ function App() {
               Fresh flavours. Family welcome.
             </div>
           </div>
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex items-center justify-center gap-4">
             <a
               href="https://www.facebook.com/"
               target="_blank"
               rel="noreferrer"
               aria-label="Tuncafe on Facebook"
-              className="grid h-9 w-9 place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
+              className="grid h-[72px] w-[72px] place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
             >
-              <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current" aria-hidden="true">
+              <svg viewBox="0 0 24 24" className="h-8 w-8 fill-current" aria-hidden="true">
                 <path d="M13.5 21v-8h2.75l.41-3H13.5V8.08c0-.87.24-1.46 1.58-1.46h1.69V3.94c-.29-.04-1.29-.13-2.46-.13-2.43 0-4.1 1.48-4.1 4.21V10H7.46v3h2.75v8h3.29Z" />
               </svg>
             </a>
@@ -569,9 +569,9 @@ function App() {
               target="_blank"
               rel="noreferrer"
               aria-label="Tuncafe on Instagram"
-              className="grid h-9 w-9 place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
+              className="grid h-[72px] w-[72px] place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
             >
-              <svg viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="1.8" aria-hidden="true">
+              <svg viewBox="0 0 24 24" className="h-8 w-8 fill-none stroke-current" strokeWidth="1.8" aria-hidden="true">
                 <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
                 <circle cx="12" cy="12" r="4" />
                 <circle cx="17.5" cy="6.5" r=".75" className="fill-current stroke-none" />
@@ -582,9 +582,9 @@ function App() {
               target="_blank"
               rel="noreferrer"
               aria-label="Tuncafe on YouTube"
-              className="grid h-9 w-9 place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
+              className="grid h-[72px] w-[72px] place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
             >
-              <svg viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true">
+              <svg viewBox="0 0 24 24" className="h-8 w-8 fill-none stroke-current" strokeWidth="1.8" strokeLinejoin="round" aria-hidden="true">
                 <path d="M21 12c0-2.15-.25-3.65-.55-4.45a2.35 2.35 0 0 0-1.35-1.35C18.25 5.9 16.1 5.7 12 5.7s-6.25.2-7.1.5a2.35 2.35 0 0 0-1.35 1.35C3.25 8.35 3 9.85 3 12s.25 3.65.55 4.45A2.35 2.35 0 0 0 4.9 17.8c.85.3 3 .5 7.1.5s6.25-.2 7.1-.5a2.35 2.35 0 0 0 1.35-1.35c.3-.8.55-2.3.55-4.45Z" />
                 <path d="m10 9 5 3-5 3V9Z" />
               </svg>
@@ -594,9 +594,9 @@ function App() {
               target="_blank"
               rel="noreferrer"
               aria-label="Tuncafe on TikTok"
-              className="grid h-9 w-9 place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
+              className="grid h-[72px] w-[72px] place-items-center rounded-full border border-[#14352d]/15 text-[#14352d] transition hover:border-[#2f7d32] hover:bg-white hover:text-[#2f7d32]"
             >
-              <svg viewBox="0 0 24 24" className="h-4 w-4 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg viewBox="0 0 24 24" className="h-8 w-8 fill-none stroke-current" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M14 4v10.5a4.5 4.5 0 1 1-3.5-4.38" />
                 <path d="M14 4c.45 2.45 1.8 3.8 4 4" />
               </svg>
