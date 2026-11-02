@@ -219,6 +219,9 @@ function App() {
             />
           </button>
           <nav className="hidden items-center gap-8 text-[14px] font-semibold md:flex">
+            <button onClick={() => scrollTo("home")} className="nav-link">
+              Home
+            </button>
             <button onClick={() => scrollTo("menu")} className="nav-link">
               Menu
             </button>
