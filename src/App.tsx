@@ -546,7 +546,7 @@ function App() {
             <img
               src="/tuncafe-logo.png"
               alt=""
-              className="h-[61.6px] w-[115.5px] object-contain"
+              className="relative top-[30px] h-[61.6px] w-[115.5px] object-contain"
             />
             <div className="text-xs text-[#29473f]">
               Fresh flavours. Family welcome.
