@@ -553,7 +553,7 @@ function App() {
             </div>
           </div>
           <div className="text-sm text-[#29473f]">
-            © 2026 Tuncafe.com. <br /> Built by Annop Tunchulrinorn.
+            © 2026 Tuncafe.com Built by Annop Tunchulrinorn
           </div>
         </div>
       </footer>
