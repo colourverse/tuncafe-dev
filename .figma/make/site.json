@@ -1,10 +1,1 @@
-{
-  "description": "Offers international tourists a convenient way to browse Tuncafe's menu, view promotions, place orders, and pay seamlessly via Apple Pay or Google Pay.",
-  "robots": {
-    "index": false
-  },
-  "accessibility": {
-    "addBypassLinks": false,
-    "ignoreReducedMotion": false
-  }
-}
+{}
